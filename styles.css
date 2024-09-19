@@ -1,0 +1,213 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #8e44ad; 
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #8e44ad;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+footer {
+  background: #8e44ad; 
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.latest-posts, .success-stories, .interactive-quiz, .bmi-calculator, .tips {
+  margin: 20px 0;
+}
+
+.result-box {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.nutrition-images img, .exercise-images img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+button {
+  background: #8e44ad; 
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #732d91;
+}
+
+a {
+  color: #8e44ad;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.tips-section {
+  margin: 20px 0;
+}
+
+.tips-section h3 {
+  color: #8e44ad;
+}
+
+.tips-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tips-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.tips-table td:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.nutrition-images, .exercise-images {
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.nutrition-images img, .exercise-images img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.nutrition-images img, .exercise-images img {
+  max-width: 300px; 
+}
+
+.bmi-images {
+  display: flex;
+  gap: 10px; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-top: 20px; 
+}
+
+.bmi-images img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; 
+}
+
+.bmi-images img {
+  max-width: 500px; 
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px; 
+  height: 250px; 
+}
+
+/* Responsive Design - Flex for smaller devices */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  section {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .tips-table td {
+    padding: 10px;
+  }
+
+  .nutrition-images img, .exercise-images img {
+    max-width: 100%; /* Make images full width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .nutrition-images img, .exercise-images img, .bmi-images img {
+    max-width: 100%; /* Images will resize to fit smaller screens */
+  }
+}
